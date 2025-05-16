@@ -1,18 +1,18 @@
 import React from 'react';
 
-import styles from './castedSpell.module.css';
+import styles from './Orb.module.css';
 
-const CastedSpell = ({imgSrc}) => {
+const Orb = ({imgSrc}) => {
     if(!imgSrc){
         return (
-            <div className={styles.castedSpell}></div>
+            <div className={styles.orb}></div>
         )
     }
     return (
-        <div className={styles.castedSpell}>
-            <img src={imgSrc} className={styles.castedSpellImg} alt='castedSpell.png'/>
+        <div className={styles.orb}>
+            <img src={imgSrc} className={styles.orbImg} alt='orb.png'/>
         </div>
     );
 };
 
-export default CastedSpell;
+export default Orb;
